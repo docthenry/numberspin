@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random select</title>
+    <style>
+       .flexcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(230, 220, 245);
+    height: 200px;
+    align-items: center;
+    justify-items: center;
+
+}
+.flexcontainer > div {
+    background-color: white;
+    width: 33%;
+    height: 190px;
+    margin: 10px;
+    color: darkblue;font-size: 150px;
+    text-align: center;
+    border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <center><h1>CLICK TO GENERATE A TOKEN</h1></center>
+    <br><hr>
+    <div class="flexcontainer">
+        <div id="rand1">0</div>
+        <div id="rand2">0</div>
+        <div id="rand3">0</div>
+        <div id="rand4">0</div>
+        <div id="rand5">0</div>
+        <div id="rand6">0</div>
+        
+
+    </div> <hr>
+    <br> <br>
+    <button type="button" onclick="randomSelect()">GENERATE TOKEN</button>
+
+    </section>
+    <script>
+        function randomSelect(){
+            let rand = Math.random()*50;
+
+        let rand1 = Math.ceil(Math.random()*50)
+        document.getElementById('rand1').innerHTML = rand1;
+
+        //let rand2 = Math.random()*50;
+        let rand2 = Math.ceil(Math.random()*50)
+        document.getElementById('rand2').innerHTML = rand2;
+
+        
+        let rand3 = Math.ceil(Math.random()*50)
+        document.getElementById('rand3').innerHTML = rand3;
+
+        let rand4 = Math.ceil(Math.random()*50)
+        document.getElementById('rand4').innerHTML = rand4;
+
+        //let rand = Math.random()*50;
+        let rand5 = Math.ceil(Math.random()*50)
+        document.getElementById('rand5').innerHTML = rand5;
+
+        //let rand = Math.random()*50;
+        let rand6 = Math.ceil(Math.random()*50)
+        document.getElementById('rand6').innerHTML = rand6;
+        }
+9
+    </script>
+</body>
+</html>
